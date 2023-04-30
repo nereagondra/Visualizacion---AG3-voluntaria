@@ -33,6 +33,18 @@ var visualization = d3plus.viz()
       {"year": 1994, "name":"delta", "value": 32}
     ]
 
+    var data2 = [
+      {"year": 1991, "name":"alpha", "value": 15},
+      {"year": 1991, "name":"beta", "value": 10},
+      {"year": 1991, "name":"gamma", "value": 5},
+      {"year": 1991, "name":"delta", "value": 50},
+      {"year": 1992, "name":"alpha", "value": 20},
+      {"year": 1992, "name":"beta", "value": 10},
+      {"year": 1992, "name":"gamma", "value": 10},
+      {"year": 1992, "name":"delta", "value": 43}
+    ]
+
+
 //Gráfico de columnas múltiples
 var visualization = d3plus.viz()
   .container("#viz2")
@@ -47,7 +59,7 @@ var visualization = d3plus.viz()
 //Gráfico de bigotes
 var visualization = d3plus.viz()
   .container("#viz3")
-  .data(data)
+  .data(data2)
   .type("box")
   .id("name")
   .x("year")
